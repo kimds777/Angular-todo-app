@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
-import { Todo } from '../../share/todo.model';
+import { Todo } from '../share/todo.model';
 
 @Component({
   selector: 'app-todos',
