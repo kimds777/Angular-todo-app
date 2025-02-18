@@ -16,6 +16,7 @@ export class TodosComponent {
   newText = '';
 
   todos: Todo[];
+  today: Date = new Date();
 
   constructor(){
     this.todos = [
