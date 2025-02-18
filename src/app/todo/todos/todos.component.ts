@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
 import { Todo } from '../share/todo.model';
-import {AddTodoComponent} from './add-todo/add-todo.component';
+import { AddTodoComponent } from './add-todo/add-todo.component';
 
 @Component({
   selector: 'app-todos',
