@@ -1,4 +1,4 @@
 export class Todo {
-  done: boolean;
-  text: string;
+  done!: boolean;
+  text!: string;
 }

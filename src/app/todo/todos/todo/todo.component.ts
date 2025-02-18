@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input, input} from '@angular/core';
 import { Todo } from '../../share/todo.model';
 
 @Component({
@@ -11,5 +11,5 @@ import { Todo } from '../../share/todo.model';
   styles: []
 })
 export class TodoComponent {
-  todo: Todo;
+  @Input() todo!: Todo;
 }

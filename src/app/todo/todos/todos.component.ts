@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
 import { Todo } from '../share/todo.model';
+import {AddTodoComponent} from './add-todo/add-todo.component';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [TodoComponent,CommonModule,FormsModule],
+  imports: [TodoComponent,CommonModule,FormsModule, AddTodoComponent],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss'
 })
@@ -27,11 +28,10 @@ export class TodosComponent {
     todo.done = !todo.done
   }
 
-  addTodo(newText: string) {
+  addTodo(text: string){
     this.todos.push({
       done: false,
-      text: newText
+      text: text
     });
-    this.newText = '';
   }
 }
